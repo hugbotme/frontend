@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
 function getData(chart) {
-    $.getJSON("http://localhost/~creinartz/hugbot-frontend/app/test.json", function(data) {
+    $.getJSON("http://www.hugbot.me/info.json", function(data) {
         $('.js_tweet-count').html(data.received);
         var data = google.visualization.arrayToDataTable([
             ['Total', 'Status'],
