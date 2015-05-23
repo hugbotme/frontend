@@ -240,7 +240,8 @@ dir {
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
-  max-width: 880px; }
+  max-width: 880px;
+  color: #c9c9c9; }
   .awesome:before, .awesome:after {
     background-color: #c9c9c9;
     content: "";
