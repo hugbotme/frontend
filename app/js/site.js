@@ -21,6 +21,7 @@ function getData(chart) {
             ['Closed',  data.closed]
         ]);
         var options = {
+            backgroundColor: '#f5f6f7'
         };
         chart.draw(data, options);
     });
