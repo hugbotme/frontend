@@ -8,8 +8,11 @@ $(document).ready(function() {
     setInterval(getData(chart),300);
 });
 
+// http://www.hugbot.me/info.json
+
+
 function getData(chart) {
-    $.getJSON("http://www.hugbot.me/info.json", function(data) {
+    $.getJSON("http://localhost/~creinartz/hugbot-frontend/app/test.json", function(data) {
         $('.js_tweet-count').html(data.received);
         var data = google.visualization.arrayToDataTable([
             ['Total', 'Status'],

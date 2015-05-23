@@ -480,7 +480,8 @@ dir {
 .detail {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #4b89d1; }
+  color: #4b89d1;
+  text-align: center; }
   .detail > p {
     padding: 5%;
     max-width: 880px;
