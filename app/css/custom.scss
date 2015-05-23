@@ -1,0 +1,165 @@
+@import "mixin";
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font: 300 90%/1.5 'Roboto', sans-serif;
+
+  @media only screen and (min-width: 767px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  background: #f5f6f7;
+  color: #f0f1f2;
+  line-height: 36px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+dt,
+dd {
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border: none;
+}
+
+a:focus,
+a:active {
+  border: 0;
+  outline: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:active {
+  font-weight: 300;
+  color: #f0f1f2;
+  text-decoration: underline;
+
+  &:hover {
+    color: #fff;
+    transition: color 1s;
+  }
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+.home,
+.about {
+  position: relative;
+  @include disable-user-select;
+}
+
+.home {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #aaa;
+}
+
+.home{
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 40%;
+
+    right: 24px;
+    left: 24px;
+    z-index: 1;
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px #000;
+    margin-top: -24px;
+  }
+}
+
+.imprint {
+  text-align: center;
+  width: 100%;
+  background-color: #002b36;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+
+  a {
+    font-size: 10px;
+    font-weight: 500;
+    color: #aaa;
+  }
+}
+
+.legal {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: #333;
+
+  a:link,
+  a:visited,
+  a:focus
+  a:active {
+    color: blue;
+  }
+
+  h2 {
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+}
