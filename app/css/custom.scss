@@ -111,12 +111,6 @@ dir {
   position: relative;
 
   h1 {
-    position: absolute;
-    top: 40%;
-
-    right: 24px;
-    left: 24px;
-    z-index: 1;
     font-size: 48px;
     font-size: 3rem;
     line-height: 1;
@@ -127,6 +121,17 @@ dir {
   }
 }
 
+.hero {
+  position: absolute;
+  top: 40%;
+  right: 24px;
+  left: 24px;
+  z-index: 1;
+}
+
+.about {
+  background-color: #4b89d1;
+}
 .imprint {
   text-align: center;
   width: 100%;
