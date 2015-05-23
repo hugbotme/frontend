@@ -88,15 +88,13 @@ html {
 
 body {
   background: #f5f6f7;
-  color: #f0f1f2;
-  line-height: 36px; }
+  color: #fff;
+  line-height: 1.5; }
 
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  line-height: 1.5; }
+  font-weight: 700; }
 
 dt,
 dd {
@@ -167,32 +165,58 @@ dir {
 
 .home {
   height: 400px;
+  background-image: url("../img/robo.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
-  background-color: #aaa; }
+  background-size: contain;
+  background-color: #fefefe; }
+  .home:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25); }
 
 .home {
   position: relative; }
   .home h1 {
     font-size: 48px;
-    font-size: 3rem;
-    line-height: 1;
-    text-align: center;
+    font-size: 3rem; }
+  .home h2 {
+    font-size: 32px;
+    font-size: 2rem; }
+  .home h1, .home h2 {
     font-weight: 600;
-    text-shadow: 1px 1px 8px #000;
-    margin-top: -24px; }
+    line-height: 1;
+    text-shadow: 1px 1px 8px #000; }
 
 .hero {
   position: absolute;
   top: 40%;
   right: 24px;
   left: 24px;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center; }
 
 .about {
-  background-color: #4b89d1; }
+  background-color: #4b89d1;
+  color: #fff;
+  padding: 5%;
+  text-align: center; }
+  .about > span, .about strong {
+    display: block; }
+  .about span {
+    font-size: 24px;
+    font-size: 1.5rem; }
+  .about strong {
+    font-size: 32px;
+    font-size: 2rem; }
+
+.detail > p {
+  padding: 5%; }
 
 .imprint {
   text-align: center;

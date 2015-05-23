@@ -1,3 +1,4 @@
+@import "globals";
 @import "mixin";
 
 body,
@@ -15,16 +16,14 @@ html {
 
 body {
   background: #f5f6f7;
-  color: #f0f1f2;
-  line-height: 36px;
+  color: #fff;
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  line-height: 1.5;
 }
 
 dt,
@@ -100,11 +99,22 @@ dir {
 
 .home {
   height: 400px;
+  background-image: url('../img/robo.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
-  background-color: #aaa;
+  background-size: contain;
+  background-color: #fefefe;
+
+  &:after {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(0,0,0,.25)
+  }
 }
 
 .home{
@@ -113,11 +123,17 @@ dir {
   h1 {
     font-size: 48px;
     font-size: 3rem;
-    line-height: 1;
-    text-align: center;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+
+  h1, h2 {
     font-weight: 600;
+    line-height: 1;
     text-shadow: 1px 1px 8px #000;
-    margin-top: -24px;
   }
 }
 
@@ -127,11 +143,36 @@ dir {
   right: 24px;
   left: 24px;
   z-index: 1;
+  text-align: center;
 }
 
 .about {
-  background-color: #4b89d1;
+  background-color: $hug-color-01;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+
+  > span, strong {
+    display: block;
+  }
+
+  span {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+  strong {
+    font-size: 32px;
+    font-size: 2rem;
+  }
 }
+
+.detail {
+  > p {
+    padding: 5%;
+  }
+
+}
+
 .imprint {
   text-align: center;
   width: 100%;
