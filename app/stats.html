@@ -23,14 +23,16 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+
 </head>
 <body class="stats">
 <header class="site-header">
     <nav class="nav cf">
         <a href="index.html" class="site-link"><h1 class="site-title">Hugbot</h1></a>
         <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
             <li class="active"><a href="stats.html">Statistics</a></li>
-            <li><a href="who.html">Who we are</a></li>
         </ul>
     </nav>
 </header>
@@ -40,19 +42,22 @@
     <h2 class="h2 text-color">
         Pullrequests
     </h2>
-
-    <div class="chart-module">
-        <div class="pie" data-start="0" data-value="40"></div>
-        <div class="pie big" data-start="40" data-value="320"></div>
+    <div class="grid-wrap">
+        <div class="row">
+            <div class="col g-1of1">
+                <div class="in">
+                    <div id="piechart"></div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </section>
 
 <section class="stats">
     <h2 class="h2 text-color">
         Tweets
     </h2>
-    <span class="tweet-number text-color text-center">6430 tweets in total!</span>
+    <span class="tweet-number text-color"><span class="js_tweet-count"></span> tweets in total!</span>
 </section>
 
 <section class="stats">

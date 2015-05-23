@@ -1,0 +1,108 @@
+.module {
+    padding: 15px;
+    background: rgba(0,0,0,.1);
+}
+
+.grid-wrap {
+    margin: 10px;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.is-nested {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    float: left;
+}
+
+.col > .in {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.last-col {
+    float: none;
+    width: auto;
+}
+
+/* Grid  */
+
+.g-1of1 { width: 100%; }
+.g-1of2 { width: 50%; }
+.g-1of3 { width: 33.33333%; }
+.g-2of3 { width: 66.66666%; }
+.g-1of4 { width: 25%; }
+.g-3of4 { width: 75%; }
+.g-1of5 { width: 20%; }
+.g-2of5 { width: 40%; }
+.g-3of5 { width: 60%; }
+.g-4of5 { width: 80%; }
+.g-1of6 { width: 16.66666%; }
+.g-4of6 { width: 66.66666%; }
+.g-5of6 { width: 83.33333%; }
+
+
+@media only screen and (min-width: $screen-small) {
+
+    .g1-1of1 { width: 100%; }
+    .g1-1of2 { width: 50%; }
+    .g1-1of3 { width: 33.33333%; }
+    .g1-2of3 { width: 66.66666%; }
+    .g1-1of4 { width: 25%; }
+    .g1-3of4 { width: 75%; }
+    .g1-1of5 { width: 20%; }
+    .g1-2of5 { width: 40%; }
+    .g1-3of5 { width: 60%; }
+    .g1-4of5 { width: 80%; }
+    .g1-1of6 { width: 16.66666%; }
+    .g1-4of6 { width: 66.66666%; }
+    .g1-5of6 { width: 83.33333%; }
+
+}
+
+@media only screen and (min-width: $screen-medium) {
+
+    .g2-1of1 { width: 100%; }
+    .g2-1of2 { width: 50%; }
+    .g2-1of3 { width: 33.33333%; }
+    .g2-2of3 { width: 66.66666%; }
+    .g2-1of4 { width: 25%; }
+    .g2-3of4 { width: 75%; }
+    .g2-1of5 { width: 20%; }
+    .g2-2of5 { width: 40%; }
+    .g2-3of5 { width: 60%; }
+    .g2-4of5 { width: 80%; }
+    .g2-1of6 { width: 16.66666%; }
+    .g2-4of6 { width: 66.66666%; }
+    .g2-5of6 { width: 83.33333%; }
+
+}
+
+@media only screen and (min-width: $screen-large) {
+
+    .g3-1of1 { width: 100%; }
+    .g3-1of2 { width: 50%; }
+    .g3-1of3 { width: 33.33333%; }
+    .g3-2of3 { width: 66.66666%; }
+    .g3-1of4 { width: 25%; }
+    .g3-3of4 { width: 75%; }
+    .g3-1of5 { width: 20%; }
+    .g3-2of5 { width: 40%; }
+    .g3-3of5 { width: 60%; }
+    .g3-4of5 { width: 80%; }
+    .g3-1of6 { width: 16.66666%; }
+    .g3-4of6 { width: 66.66666%; }
+    .g3-5of6 { width: 83.33333%; }
+
+}

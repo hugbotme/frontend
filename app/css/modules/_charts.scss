@@ -1,3 +1,46 @@
 .chart-module {
     height: 250px;
 }
+
+.repo-list {
+    margin-left: 20px;
+}
+
+.chart-legend {
+
+    > li {
+        display: block;
+        line-height: 40px;
+        padding-left: 20px;
+        position: relative;
+        font-size: 20px;
+        font-size: 1.25rem;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            height: 10px;
+            width: 10px;
+            background: red;
+        }
+
+        &.pull-progress {
+            &:before {
+                background: green;
+            }
+        }
+        &.pull-merged {
+            &:before {
+                background: red;
+            }
+        }
+        &.pull-closed {
+            &:before {
+                background: blue;
+            }
+        }
+    }
+}
