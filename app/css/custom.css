@@ -76,6 +76,16 @@
  *     @include vertical-align;
  *   }
  */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
 body,
 html {
   height: 100%; }
@@ -164,7 +174,7 @@ dir {
   user-select: none; }
 
 .home {
-  height: 400px;
+  height: 80vh;
   background-image: url("../img/robo.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -209,14 +219,42 @@ dir {
   .about > span, .about strong {
     display: block; }
   .about span {
-    font-size: 24px;
-    font-size: 1.5rem; }
-  .about strong {
     font-size: 32px;
     font-size: 2rem; }
+  .about strong {
+    font-size: 48px;
+    font-size: 3rem; }
 
-.detail > p {
-  padding: 5%; }
+.detail {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+  color: #4b89d1; }
+  .detail > p {
+    padding: 5%;
+    max-width: 880px;
+    margin: 0 auto; }
+
+.awesome {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 880px; }
+  .awesome:before, .awesome:after {
+    background-color: #c9c9c9;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  .awesome:before {
+    right: 0.5em;
+    margin-left: -50%; }
+  .awesome:after {
+    left: 0.5em;
+    margin-right: -50%; }
 
 .imprint {
   text-align: center;
@@ -231,6 +269,15 @@ dir {
     font-size: 10px;
     font-weight: 500;
     color: #aaa; }
+
+.footer {
+  background-color: #4b89d1;
+  padding: 20px 10px; }
+  .footer > ul {
+    float: right; }
+    .footer > ul > li {
+      display: inline-block;
+      padding-right: 10px; }
 
 .legal {
   width: 100%;

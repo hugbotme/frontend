@@ -1,6 +1,16 @@
 @import "globals";
 @import "mixin";
 
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
 body,
 html {
   height: 100%;
@@ -98,7 +108,7 @@ dir {
 }
 
 .home {
-  height: 400px;
+  height: 80vh;
   background-image: url('../img/robo.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -147,7 +157,7 @@ dir {
 }
 
 .about {
-  background-color: $hug-color-01;
+  background-color: $hug-color-02;
   color: #fff;
   padding: 5%;
   text-align: center;
@@ -157,20 +167,55 @@ dir {
   }
 
   span {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-  strong {
     font-size: 32px;
     font-size: 2rem;
+  }
+  strong {
+    font-size: 48px;
+    font-size: 3rem;
   }
 }
 
 .detail {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+  color: $hug-color-02;
+
   > p {
     padding: 5%;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}
+
+.awesome {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 880px;
+
+  &:before,
+  &:after {
+    background-color: $hug-color-03;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
   }
 
+  &:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  &:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
 }
 
 .imprint {
@@ -187,6 +232,20 @@ dir {
     font-size: 10px;
     font-weight: 500;
     color: #aaa;
+  }
+}
+
+.footer {
+  background-color: $hug-color-02;
+  padding: 20px 10px;
+
+  > ul {
+    float: right;
+
+    > li {
+      display: inline-block;
+      padding-right: 10px;
+    }
   }
 }
 
