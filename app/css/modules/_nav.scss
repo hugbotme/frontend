@@ -1,0 +1,100 @@
+.nav {
+    width: auto;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        display: block;
+
+        @include respond-to(screen-small) {
+            float: right;
+            margin-top: 10px;
+        }
+
+        &:after {
+            content: " ";
+            display: block;
+            font-size: 0;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+
+            &.last,
+            &:last-child {
+                > a:after {
+                    display: none;
+                }
+            }
+
+            &.active {
+                a {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                padding: 15px 25px 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                position: relative;
+                transition: color .25s;
+
+                &:hover {
+                    &:before {
+                        width: 100%
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 3px;
+                    width: 0;
+                    background: #fff;
+                    transition: width .25s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav ul li {
+        float: none;
+        display: block;
+    }
+    .nav ul li a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid $hug-color-01;
+    }
+    .nav ul li.last > a,
+    .nav ul li:last-child > a {
+        border: 0;
+    }
+    .nav ul li a:after {
+        display: none;
+    }
+    .nav ul li a:before {
+        display: none;
+    }
+}

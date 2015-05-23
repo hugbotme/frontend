@@ -1,6 +1,3 @@
-@import "globals";
-@import "mixin";
-
 .cf:before,
 .cf:after {
   content: " "; /* 1 */
@@ -79,12 +76,8 @@ hr {
 a:link,
 a:visited,
 a:active {
-  font-weight: 300;
-  color: #f0f1f2;
-  text-decoration: underline;
 
   &:hover {
-    color: #fff;
     transition: color 1s;
   }
 }
@@ -104,7 +97,6 @@ dir {
 .home,
 .about {
   position: relative;
-  @include disable-user-select;
 }
 
 .home {
@@ -331,19 +323,11 @@ dir {
 */
 .pie:nth-of-type(1):BEFORE,
 .pie:nth-of-type(1):AFTER {
-  background-color:blue;
+  background-color:red;
 }
 .pie:nth-of-type(2):AFTER,
 .pie:nth-of-type(2):BEFORE {
   background-color:green;
-}
-.pie:nth-of-type(3):AFTER,
-.pie:nth-of-type(3):BEFORE {
-  background-color:red;
-}
-.pie:nth-of-type(4):AFTER,
-.pie:nth-of-type(4):BEFORE {
-  background-color:orange;
 }
 /*
   now rotate each piece based on their cumulative starting

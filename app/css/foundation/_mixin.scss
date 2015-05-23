@@ -1,0 +1,17 @@
+$screen-small: 767px !default;
+$screen-medium: 1023px !default;
+$screen-large:  1279px !default;
+
+@mixin respond-to($media) {
+  @if $media == screen-small {
+    @media only screen and (min-width: $screen-small) {@content;}
+  }
+
+  @else if $media == screen-medium {
+    @media only screen and (min-width: $screen-medium) {@content;}
+  }
+
+  @else if $media == screen-large {
+    @media only screen and (min-width: $screen-large) {@content;}
+  }
+}
