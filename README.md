@@ -1,4 +1,4 @@
-my-homepage
+hugbot
 ===========
 
-my personal homepage
+the hugbot
