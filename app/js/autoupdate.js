@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
     getData(chart);
-    setInterval( function() { getData(chart); }, 500 );
+    setInterval( function() { getData(chart); }, 3000 );
 });
 
 // http://www.hugbot.me/info.json
@@ -10,7 +10,7 @@ $(document).ready(function() {
 function getData(chart) {
     $.getJSON("http://www.hugbot.me/info.json", function(data) {
         console.log(data);
-        $('.js_tweet-count').html(data.received);
+        $('.js_tweet-count').html(data.queue);
         var data = google.visualization.arrayToDataTable([
             ['Total', 'Status'],
             ['In Progress',      data.in_progress],

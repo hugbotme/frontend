@@ -101,11 +101,11 @@ dir {
 
 .home {
   height: 80vh;
-  background-image: url('../img/robo.jpg');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 0;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-color: #fefefe;
 
   &:after {
@@ -115,7 +115,7 @@ dir {
     right:0;
     bottom:0;
     left:0;
-    background-color:rgba(0,0,0,.25)
+    background-color:rgba(0,0,0,.1)
   }
 }
 
@@ -135,7 +135,7 @@ dir {
   h1, h2 {
     font-weight: 600;
     line-height: 1;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 2px #fff;
   }
 }
 
@@ -156,6 +156,10 @@ dir {
 
   > span, strong {
     display: block;
+  }
+
+  a {
+    color: #fff;
   }
 
   span {
