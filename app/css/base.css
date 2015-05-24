@@ -48,7 +48,7 @@ body {
   margin-bottom: 20px; }
 
 .hugbot-logo {
-  max-width: 400px; }
+  max-width: 300px; }
 
 .module {
   padding: 15px;
@@ -441,6 +441,7 @@ dir {
 
 .home {
   height: 80vh;
+  min-height: 600px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -460,7 +461,8 @@ dir {
   position: relative; }
   .home h1 {
     font-size: 48px;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-top: -30px; }
   .home h2 {
     font-size: 32px;
     font-size: 2rem; }
@@ -471,7 +473,7 @@ dir {
 
 .hero {
   position: absolute;
-  top: 40%;
+  top: 90px;
   right: 24px;
   left: 24px;
   z-index: 1;
