@@ -7,14 +7,12 @@ body {
 }
 
 .stats {
-    section {
-        margin: 0 auto;
-        padding: 0 20px;
-        border-bottom: 1px solid #ccc;
-        max-width: 800px;
-        position: relative;
-    }
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    position: relative;
 }
+
 .creators {
     .grid-wrap {
         max-width: 800px;

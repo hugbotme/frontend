@@ -102,12 +102,15 @@ dir {
 .home {
   height: 80vh;
   min-height: 600px;
+
+  /*
   background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #fefefe;
+  */
+  background-color: #666;
 
   &:after {
     content:"";
@@ -126,7 +129,6 @@ dir {
   h1 {
     font-size: 48px;
     font-size: 3rem;
-    margin-top: -30px;
   }
 
   h2 {
@@ -143,7 +145,7 @@ dir {
 
 .hero {
   position: absolute;
-  top: 90px;
+  top: 60px;
   right: 24px;
   left: 24px;
   z-index: 1;
@@ -156,12 +158,16 @@ dir {
   padding: 5%;
   text-align: center;
 
+  > span + span {
+    margin-top: 40px;
+  }
   > span, strong {
     display: block;
   }
 
   a {
-    color: #fff;
+    color: #D8D8D8;
+    text-decoration: none;
   }
 
   span {
@@ -177,6 +183,7 @@ dir {
 .detail {
   font-size: 20px;
   font-size: 1.25rem;
+  padding-top: 20px;
   color: $hug-color-02;
   text-align: center;
 
@@ -185,12 +192,16 @@ dir {
     max-width: 880px;
     margin: 0 auto;
   }
+  iframe {
+    margin: 20px auto !important;
+  }
 }
 
 .awesome {
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
   max-width: 880px;
   color: $hug-color-03;
 
