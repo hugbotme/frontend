@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         // Project settings
-        creinartz: {
+        hugbot: {
             // Configurable paths
             app: 'app',
             dist: 'dist'
@@ -35,8 +35,8 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         '.tmp',
-                        '<%= creinartz.dist %>/*',
-                        '!<%= creinartz.dist %>/.git*'
+                        '<%= hugbot.dist %>/*',
+                        '!<%= hugbot.dist %>/.git*'
                     ]
                 }]
             },
@@ -48,17 +48,17 @@ module.exports = function(grunt) {
 
         useminPrepare: {
             options: {
-                dest: '<%= creinartz.dist %>'
+                dest: '<%= hugbot.dist %>'
             },
-            html: '<%= creinartz.app %>/index.html'
+            html: '<%= hugbot.app %>/index.html'
         },
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= creinartz.dist %>']
+                assetsDirs: ['<%= hugbot.dist %>']
             },
-            html: ['<%= creinartz.dist %>/{,*/}*.html'],
-            css: ['<%= creinartz.dist %>/css/{,*/}*.css']
+            html: ['<%= hugbot.dist %>/{,*/}*.html'],
+            css: ['<%= hugbot.dist %>/css/{,*/}*.css']
         },
         // Copies remaining files to places other tasks can use
         copy: {
@@ -66,8 +66,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     dot: true,
-                    cwd: '<%= creinartz.app %>',
-                    dest: '<%= creinartz.dist %>',
+                    cwd: '<%= hugbot.app %>',
+                    dest: '<%= hugbot.dist %>',
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
             styles: {
                 expand: true,
                 dot: true,
-                cwd: '<%= creinartz.app %>/css',
+                cwd: '<%= hugbot.app %>/css',
                 dest: '.tmp/css/',
                 src: '{,*/}*.css'
             }
@@ -104,8 +104,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= creinartz.dist %>/js/{,*/}*.js',
-                        '<%= creinartz.dist %>/css/{,*/}*.css'
+                        '<%= hugbot.dist %>/js/{,*/}*.js',
+                        '<%= hugbot.dist %>/css/{,*/}*.css'
                     ]
                 }
             }
@@ -119,9 +119,9 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
 
-                    cwd: '<%= creinartz.app %>/img',
+                    cwd: '<%= hugbot.app %>/img',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= creinartz.dist %>/img'
+                    dest: '<%= hugbot.dist %>/img'
                 }]
             }
         },
@@ -140,9 +140,9 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= creinartz.dist %>',
+                    cwd: '<%= hugbot.dist %>',
                     src: '{,*/}*.html',
-                    dest: '<%= creinartz.dist %>'
+                    dest: '<%= hugbot.dist %>'
                 }]
             }
         }
