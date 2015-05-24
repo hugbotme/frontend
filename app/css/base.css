@@ -8,6 +8,17 @@ body {
   max-width: 800px;
   position: relative; }
 
+.creators .grid-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+.creators .in {
+  text-align: center; }
+.creators .creator-img {
+  width: 282px;
+  height: 266px;
+  border-radius: 50%; }
+
 .h2 {
   font-size: 48px;
   font-size: 3rem; }

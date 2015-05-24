@@ -15,6 +15,21 @@ body {
         position: relative;
     }
 }
+.creators {
+    .grid-wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .in {
+        text-align: center;
+    }
+    .creator-img {
+        width: 282px;
+        height: 266px;
+        border-radius: 50%;
+    }
 
+}
 
 
