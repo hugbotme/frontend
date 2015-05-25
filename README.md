@@ -11,3 +11,6 @@ run
 
 $ bower install
 
+$ npm install
+
+$ grunt build
