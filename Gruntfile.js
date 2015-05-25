@@ -95,7 +95,7 @@ module.exports = function(grunt) {
                         mqpacker: true
                 },
                 files: {
-                    '.tmp/css/custom.css': '.tmp/css/custom.css'
+                    '.tmp/css/base.css': '.tmp/css/base.css'
                 }
             }
         },
